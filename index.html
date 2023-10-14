@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Doomsday Button</title>
+</head>
+<style>body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.doomsday-button {
+  padding: 20px 40px;
+  font-size: 24px;
+  background-color: #030303;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /
+}
+
+.doomsday-button:hover {
+  background-color: #a92626; 
+  animation: shake 0.5s ease infinite; 
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}</style>
+<body>
+  <button class="doomsday-button">Doomsday</button>
+</body>
+</html>
